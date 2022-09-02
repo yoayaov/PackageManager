@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- tools 域 表示 仅在预览时生效 -->
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            tools:text="应用名称" />
+
+        <TextView
+            android:id="@+id/tv_app_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            tools:text="应用包名" />
+    </LinearLayout>
+</LinearLayout>
